@@ -1,0 +1,39 @@
+#logo {
+  height: 100px;
+  margin-right: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav div {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  padding: 40px 25px;
+  color: black;
+  flex-wrap: wrap;
+  text-align: center;
+  border-top: 3px solid transparent;
+}
+nav a:hover {
+  color: var(--blue);
+  border-top: 3px solid var(--blue);
+}
+@media (max-width: 767px) {
+  nav div {
+    flex-basis: 100%;
+  }
+  nav a {
+    flex-basis: 50%;
+  }
+  #logo {
+    margin: auto;
+  }
+  nav a:hover {
+    border-bottom: 3px solid var(--blue);
+    border-top: none;
+  }
+}

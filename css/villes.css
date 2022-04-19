@@ -1,0 +1,50 @@
+/* information */
+.info {
+  display: flex;
+  align-items: center;
+}
+.fas.fa-info {
+  padding: 5px 10px;
+  color: var(--blue);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--grislight);
+}
+/* liste-villes */
+.villes h2 {
+  margin-left: 3%;
+}
+.liste-villes {
+  margin-top: 2%;
+  display: flex;
+  gap: 40px;
+}
+.villes {
+  flex-basis: 65%;
+  background-color: var(--grislight);
+  border-radius: 10px 10px 10px 10px;
+}
+.popular-list {
+  flex-basis: 35%;
+  background-color: var(--grislight);
+  border-radius: 10px 10px 10px 10px;
+}
+/* tablette */
+@media (min-width: 768px) and (max-width: 991px) {
+  .liste-villes {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+}
+/* téléphone mobile */
+@media (max-width: 767px) {
+  .liste-villes {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  .villes {
+    background-color: transparent;
+  }
+}

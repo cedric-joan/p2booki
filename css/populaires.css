@@ -1,0 +1,99 @@
+/* popular */
+.popular-list h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.popular-list h2 .fas {
+  padding: 0%;
+}
+.popular-picture {
+  display: flex;
+  flex-direction: column;
+}
+.popular-picture > div {
+  display: flex;
+}
+.popular-description {
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+  margin-left: 1.5%;
+}
+.popular-description p i {
+  margin: 0%;
+}
+/* popular card*/
+.popular {
+  margin-bottom: 8%;
+  border: 1px solid white;
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  width: 90%;
+  box-shadow: 0 0 15px var(--gris);
+  margin-left: 5%;
+}
+.popular:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.popular img {
+  width: 40%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 1%;
+  object-fit: cover;
+}
+.popular .fas {
+  background-color: transparent;
+  padding: 0%;
+  margin-top: 25%;
+}
+/* tablette */
+@media (min-width: 768px) and (max-width: 991px) {
+  .popular {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .popular img {
+    width: 40%;
+  }
+  .popular-list {
+    order: -1;
+  }
+  .popular-description {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    margin-left: 3%;
+  }
+  .popular .fas {
+    background-color: transparent;
+    padding: 0%;
+    margin-top: 30%;
+  }
+}
+/* téléphone mobile */
+@media (max-width: 767px) {
+  .popular-list {
+    flex-direction: column;
+    order: -1;
+  }
+  .popular {
+    width: 90%;
+  }
+  .popular img {
+    width: 40%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .popular-description {
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-left: 3%;
+  }
+  .popular-description .fas {
+    margin-top: 55%;
+  }
+}

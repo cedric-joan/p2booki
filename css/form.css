@@ -1,0 +1,59 @@
+/*icone map*/
+.fas {
+  background-color: var(--grislight);
+  padding: 15px 15px;
+  border-radius: 10px 0px 0px 10px;
+}
+/*formulaire recherche*/
+.form {
+  display: flex;
+}
+.form input {
+  border: 1px solid var(--grislight);
+  padding-left: 3%;
+  padding-right: 5%;
+  font-weight: bold;
+  font-size: 15px;
+}
+input.placeholder {
+  color: black;
+}
+/*bouton rechercher*/
+.form button {
+  flex-wrap: wrap;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--blue);
+  color: rgb(246, 245, 252);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 40px;
+  border-color: transparent;
+  cursor: pointer;
+}
+.form button i {
+  display: none;
+}
+.form button:hover {
+  background-color: blue;
+  color: white;
+}
+@media (max-width: 767px) {
+  .search {
+    display: none;
+  }
+  .form {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .form button {
+    padding: 2px;
+  }
+  .form button:hover {
+    background-color: var(--blue);
+  }
+  .form button i {
+    display: inline;
+    background: var(--blue);
+    border-radius: 0px 10px 10px 0px;
+  }
+}

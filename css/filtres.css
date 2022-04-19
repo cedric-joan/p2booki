@@ -1,0 +1,45 @@
+.liste-filtres {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+.filtres {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--grislight);
+  border-radius: 20px 20px 20px 20px;
+}
+.filtres:hover {
+  transform: scale(1.02);
+  background-color: var(--lightblue);
+  cursor: pointer;
+}
+.filtres span {
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.filtres .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  background-color: var(--lightblue);
+  border-radius: 50%;
+  margin-left: 2%;
+  padding: 20px;
+  margin: -1px;
+  height: 20px;
+  width: 20px;
+}
+@media (max-width: 767px) {
+  .liste-filtres {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2%;
+  }
+  .filtres {
+    margin-bottom: 2%;
+  }
+}
